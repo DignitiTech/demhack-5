@@ -13,6 +13,7 @@ appinfo/info.xsd
 app/*
 !app/index.html
 test-*
+!test-setup.json
 
 # just sane ignores
 .*.sw[po]

@@ -1,0 +1,12 @@
+{
+	"apps": {
+		"notes.nc.3nweb.app": {
+			"dir": "."
+		}
+	},
+	"users": [
+		{
+			"idTemplate": "notes tester %d @3nweb.com"
+		}
+	]
+}
