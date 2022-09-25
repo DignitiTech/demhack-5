@@ -18,7 +18,7 @@
 
 Этот порт/хак прошёл от состояния непонятки и невключения до чёткой процедуры изменений, открывания и начальной интерактивности.
 
-Чтобы подчеркнуть самою эссенцию как делается переход обычного Web приложение в 3NWeb приложение, обратимся на метод `fetchNotes` дающий данные программе. В оригинале метод делает [запрос по сети](https://github.com/nextcloud/notes/blob/master/src/NotesService.js#L62). В порте метод делает [запрос к файлам](https://github.com/DignitiTech/demhack-5/blob/main/nextcloud_app_port_to_3NWeb/src/NotesService.js#L65) предоставленные [3NWeb утилитами через `w3n`](https://github.com/DignitiTech/demhack-5/blob/main/nextcloud_app_port_to_3NWeb/src/DataOnDisk.js#L10).
+Чтобы подчеркнуть самою эссенцию как делается переход обычного Web приложение в [3NWeb](https://opensource.ieee.org/3nweb/architecture/-/blob/main/etc/3NWeb-overview.pdf) приложение, обратимся на метод `fetchNotes` дающий данные программе. В оригинале метод делает [запрос по сети](https://github.com/nextcloud/notes/blob/master/src/NotesService.js#L62). В порте метод делает [запрос к файлам](https://github.com/DignitiTech/demhack-5/blob/main/nextcloud_app_port_to_3NWeb/src/NotesService.js#L65) предоставленные [3NWeb утилитами через `w3n`](https://github.com/DignitiTech/demhack-5/blob/main/nextcloud_app_port_to_3NWeb/src/DataOnDisk.js#L10).
 
 Саму платформу для десктопа можно взять [тут (prerelease version 0.14.24)](https://3nsoft.com/downloads/platform-bundle/linux/0.14.24/3NWeb-x64.AppImage). Её для теста надо линкировать в папку.
 
