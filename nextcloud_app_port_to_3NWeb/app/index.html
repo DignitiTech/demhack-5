@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/img/favicon.png" />
+    <!-- <link rel="stylesheet" href="/css/notes.scss"> -->
+    <title>Notes</title>
+    <script>
+        // OC and OCA are nextcloud's things
+        var OCA = {};
+        var OC = {
+            isUserAdmin() { return false; },
+            getLanguage() { return 'en-GB'; },
+            config: {}
+        };
+        // n should come from some l10n library, with OC.L10N
+        function n(folder, singleStr, pluralStr, count) {
+            return ((count <= 1) ? singleStr : pluralStr).replace('%n', count);
+        }
+        // t should come from some l10n library, with OC.L10N
+        function t(folder, str, replacements) {
+            if (replacements) {
+                for (const [
+                    pattern, injection
+                ] of Object.entries(replacements)) {
+                    const regexp = new RegExp(`\\{\\s*${pattern}\\s*\\}`, 'g');
+                    str = str.replace(regexp, injection);
+                }
+            }
+            return str;
+        }
+    </script>
+</head>
+
+<body>
+    <div id="content"></div>
+    <script type="module" src="/js/notes-main.js"></script>
+    <script type="module" src="/js/notes-dashboard.js"></script>
+</body>
+
+</html>

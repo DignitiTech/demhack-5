@@ -1,0 +1,22 @@
+{
+  "name": "Notes",
+
+  "appDomain": "notes.nc.3nweb.app",
+	
+  "version": "0.1.0",
+
+	"components": {
+		
+    "/index.html": {
+      "startedBy": "user",
+      "runtime": "web-gui",
+      "capsRequested": {
+        "storage": {
+          "appFS": "default"
+        }
+      }
+    }
+
+	}
+
+}
