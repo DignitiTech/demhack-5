@@ -1,3 +1,10 @@
+## Archival note
+
+Team got one of hackathon prizes. 😎
+
+Idea of porting NextCloud apps onto 3NWeb works out nicely. Further development should use sqlite in WASM for some elements and headless services running in deno runtime.
+
+
 ## DEMHACK 5
 
 Этот репозиторий содержит две папки для двух параллельных задач, за которые команда взялась в рамках дву-дневного хакатона DEMHACK 5.
